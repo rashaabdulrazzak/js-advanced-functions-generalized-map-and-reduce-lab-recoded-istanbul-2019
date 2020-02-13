@@ -22,3 +22,12 @@ function reduce(array,func,start){
   }
   return val;
 }
+/* another solution for reduce 
+function reduce (arr,fn,startingValue=0){
+  let sum =0,memo=0;
+  for(let i=0; i<arr.length; i++){
+    memo += arr[i-1]
+    sum = fn(arr[i],memo + startingValue)
+  }
+  return sum 
+}*/
